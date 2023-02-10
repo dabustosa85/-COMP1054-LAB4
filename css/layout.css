@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+
+
+html {
+  box-sizing: content-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+	font: 110%/1.4 Helvetica, Arial, sans-serif;
+}
+
+#container {
+	outline: 3px dashed green;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	outline: 3px dashed red;
+	background-color: lightblue;
+	padding: 50px;
+	position: fixed;
+	top: 0;
+	z-index: 20;
+}
+figure {
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+	margin: 0;
+}
+main {
+	outline: 3px dashed blue;
+	float: left;
+	margin-top: 135px;
+}
+
+#sec1 {
+	padding: 30px;
+	border: 10px solid yellow;
+	width: 370px;
+	float: right;
+
+}
+#sec2 {
+	padding: 30px;
+	border: 10px solid yellow;
+	width: 370px;
+	float: right;
+}
+
+aside {
+	width: 200px;
+	padding: 20px;
+	border: 10px solid lightblue;
+	float: left;
+}
+
+footer {
+	outline: 3px dashed limegreen;
+	clear: both;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #00000091;
+	color: white;
+	text-align: center;
+
+}
+main p img {
+	visibility: hidden;
+	display: none;
+}
+
+p.social {
+
+	font-family: socialicoregular;
+	font-size: 60px;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	height: 100px;
+	width: 250px;
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	right: 10px;
+	top: 90px;
+	margin: 0;
+	z-index: 10;
+}
